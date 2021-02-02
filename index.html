@@ -1,200 +1,31 @@
-
 <!DOCTYPE html>
-<html lang="en" >
-
+<html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <title>DESIGNER BY NAM</title>
-  
-  
-  
-      <link rel="stylesheet" href="css/style.css">
-
-  
-</head>
-
-<body>
-
-  <link href='https://fonts.googleapis.com/css?family=Bungee' rel='stylesheet' type='text/css'>
-<div id='root'>
-  <div data-text='DESIGNER BY NAM' id='text'>
-    DESIGNER BY NAM
-  </div>
-</div>
-
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ngô Đình Nam</title>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:700,900" rel="stylesheet">
 <style>
-* {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-}
-
-body {
-  background: #111;
-  font-family: 'Bungee', cursive;
-  text-transform: uppercase;
-  font-size: 50px;
-  font-weight: bold;
-  margin: 0;
-}
-
-#root {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%) translateX(-50%);
-  -moz-transform: translateY(-50%) translateX(-50%);
-  -ms-transform: translateY(-50%) translateX(-50%);
-  -o-transform: translateY(-50%) translateX(-50%);
-  transform: translateY(-50%) translateX(-50%);
-  left: 50%;
-}
-
-#text {
-  top: 0;
-  left: -6px;
-  color: red;
-  mix-blend-mode: screen;
-  position: relative;
-  white-space: nowrap;
-  -webkit-filter: blur(1px);
-  -moz-filter: blur(1px);
-  filter: blur(1px);
-  -webkit-animation: skew 2s infinite, flash .04s infinite;
-  -moz-animation: skew 2s infinite, flash .04s infinite;
-  -o-animation: skew 2s infinite, flash .04s infinite;
-  animation: skew 2s infinite, flash .04s infinite;
-}
-#text:after, #text:before {
-  content: attr(data-text);
-  position: absolute;
-  mix-blend-mode: screen;
-}
-#text:after {
-  top: 0;
-  left: 6px;
-  color: blue;
-  -webkit-animation: move 1.5s infinite;
-  -moz-animation: move 1.5s infinite;
-  -o-animation: move 1.5s infinite;
-  animation: move 1.5s infinite;
-}
-#text:before {
-  top: -2.4px;
-  left: 3.6px;
-  color: limegreen;
-}
-
-.line {
-  position: absolute;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 1px;
-  background: blue;
-  mix-blend-mode: screen;
-  -webkit-filter: blur(1px);
-  -moz-filter: blur(1px);
-  filter: blur(1px);
-}
-.line:after, .line:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  mix-blend-mode: screen;
-}
-.line:after {
-  top: 2px;
-  background: red;
-}
-.line:before {
-  top: -2px;
-  background: limegreen;
-}
-
-@-webkit-keyframes skew {
-  0% {
-    -webkit-transform: none;
-    -moz-transform: none;
-    -ms-transform: none;
-    -o-transform: none;
-    transform: none;
-  }
-  30% {
-    -webkit-transform: none;
-    -moz-transform: none;
-    -ms-transform: none;
-    -o-transform: none;
-    transform: none;
-  }
-  30.2% {
-    -webkit-transform: skewX(50deg);
-    -moz-transform: skewX(50deg);
-    -ms-transform: skewX(50deg);
-    -o-transform: skewX(50deg);
-    transform: skewX(50deg);
-  }
-  30.4% {
-    -webkit-transform: skewX(-50deg);
-    -moz-transform: skewX(-50deg);
-    -ms-transform: skewX(-50deg);
-    -o-transform: skewX(-50deg);
-    transform: skewX(-50deg);
-  }
-  31% {
-    -webkit-transform: none;
-    -moz-transform: none;
-    -ms-transform: none;
-    -o-transform: none;
-    transform: none;
-  }
-}
-@-moz-keyframes skew {
-  0% {
-    -webkit-transform: none;
-    -moz-transform: none;
-    -ms-transform: none;
-    -o-transform: none;
-    transform: none;
-  }
-  30% {
-    -webkit-transform: none;
-    -moz-transform: none;
-    -ms-transform: none;
-    -o-transform: none;
-    transform: none;
-  }
-  30.2% {
-    -webkit-transform: skewX(50deg);
-    -moz-transform: skewX(50deg);
-    -ms-transform: skewX(50deg);
-    -o-transform: skewX(50deg);
-    transform: skewX(50deg);
-  }
-  30.4% {
-    -webkit-transform: skewX(-50deg);
-    -moz-transform: skewX(-50deg);
-    -ms-transform: skewX(-50deg);
-    -o-transform: skewX(-50deg);
-    transform: skewX(-50deg);
-  }
-  31% {
-    -webkit-transform: none;
-    -moz-transform: none;
-    -ms-transform: none;
-    -o-transform: none;
-    transform: none;
-  }
-}
-@-o-keyframes skew {
-  0% {
-    -webkit-transform: none;
-    -moz-transform: none;
-    -ms-transform: none;
-    -o-transform: none;
-    transform: none;
-  }
-  30% {
-    -webkit-transform: none;
-    -moz-tr
+*{-webkit-box-sizing:border-box;box-sizing:border-box}body{padding:0;margin:0}#notfound{position:relative;height:100vh;background:#030005}#notfound .notfound{position:absolute;left:50%;top:50%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.notfound{max-width:767px;width:100%;line-height:1.4;text-align:center}.notfound .notfound-404{position:relative;height:180px;margin-bottom:20px;z-index:-1}.notfound .notfound-404 h1{font-family:montserrat,sans-serif;position:absolute;left:50%;top:50%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);font-size:224px;font-weight:900;margin-top:0;margin-bottom:0;margin-left:-12px;color:#030005;text-transform:uppercase;text-shadow:-1px -1px 0 #8400ff,1px 1px 0 #ff005a;letter-spacing:-20px}.notfound .notfound-404 h2{font-family:montserrat,sans-serif;position:absolute;left:0;right:0;top:110px;font-size:42px;font-weight:700;color:#fff;text-transform:uppercase;text-shadow:0 2px 0 #8400ff;letter-spacing:13px;margin:0}.notfound a{font-family:montserrat,sans-serif;display:inline-block;text-transform:uppercase;color:#ff005a;text-decoration:none;border:2px solid;background:0 0;padding:10px 40px;font-size:14px;font-weight:700;-webkit-transition:.2s all;transition:.2s all}.notfound a:hover{color:#8400ff}@media only screen and (max-width:767px){.notfound .notfound-404 h2{font-size:24px}}@media only screen and (max-width:480px){.notfound .notfound-404 h1{font-size:182px}}
+</style>	  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+</head>
+<body>
+<div id="notfound">
+<div class="notfound">
+<div class="notfound-404">
+<h1>JSC</h1>
+<h2>NGO DINH NAM</h2>
+</div>
+<a href="//niscaz.com">ACCESS WEBSITE</a>
+</div>
+</div>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-23581568-13');
+</script>
+</body>
+</html>
