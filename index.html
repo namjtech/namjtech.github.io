@@ -1,1 +1,200 @@
-Hello 
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>DESIGNER BY NAM</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <link href='https://fonts.googleapis.com/css?family=Bungee' rel='stylesheet' type='text/css'>
+<div id='root'>
+  <div data-text='DESIGNER BY NAM' id='text'>
+    DESIGNER BY NAM
+  </div>
+</div>
+
+<style>
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  background: #111;
+  font-family: 'Bungee', cursive;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: bold;
+  margin: 0;
+}
+
+#root {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  -moz-transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
+  -o-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+  left: 50%;
+}
+
+#text {
+  top: 0;
+  left: -6px;
+  color: red;
+  mix-blend-mode: screen;
+  position: relative;
+  white-space: nowrap;
+  -webkit-filter: blur(1px);
+  -moz-filter: blur(1px);
+  filter: blur(1px);
+  -webkit-animation: skew 2s infinite, flash .04s infinite;
+  -moz-animation: skew 2s infinite, flash .04s infinite;
+  -o-animation: skew 2s infinite, flash .04s infinite;
+  animation: skew 2s infinite, flash .04s infinite;
+}
+#text:after, #text:before {
+  content: attr(data-text);
+  position: absolute;
+  mix-blend-mode: screen;
+}
+#text:after {
+  top: 0;
+  left: 6px;
+  color: blue;
+  -webkit-animation: move 1.5s infinite;
+  -moz-animation: move 1.5s infinite;
+  -o-animation: move 1.5s infinite;
+  animation: move 1.5s infinite;
+}
+#text:before {
+  top: -2.4px;
+  left: 3.6px;
+  color: limegreen;
+}
+
+.line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  background: blue;
+  mix-blend-mode: screen;
+  -webkit-filter: blur(1px);
+  -moz-filter: blur(1px);
+  filter: blur(1px);
+}
+.line:after, .line:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  mix-blend-mode: screen;
+}
+.line:after {
+  top: 2px;
+  background: red;
+}
+.line:before {
+  top: -2px;
+  background: limegreen;
+}
+
+@-webkit-keyframes skew {
+  0% {
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+  }
+  30% {
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+  }
+  30.2% {
+    -webkit-transform: skewX(50deg);
+    -moz-transform: skewX(50deg);
+    -ms-transform: skewX(50deg);
+    -o-transform: skewX(50deg);
+    transform: skewX(50deg);
+  }
+  30.4% {
+    -webkit-transform: skewX(-50deg);
+    -moz-transform: skewX(-50deg);
+    -ms-transform: skewX(-50deg);
+    -o-transform: skewX(-50deg);
+    transform: skewX(-50deg);
+  }
+  31% {
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+  }
+}
+@-moz-keyframes skew {
+  0% {
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+  }
+  30% {
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+  }
+  30.2% {
+    -webkit-transform: skewX(50deg);
+    -moz-transform: skewX(50deg);
+    -ms-transform: skewX(50deg);
+    -o-transform: skewX(50deg);
+    transform: skewX(50deg);
+  }
+  30.4% {
+    -webkit-transform: skewX(-50deg);
+    -moz-transform: skewX(-50deg);
+    -ms-transform: skewX(-50deg);
+    -o-transform: skewX(-50deg);
+    transform: skewX(-50deg);
+  }
+  31% {
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+  }
+}
+@-o-keyframes skew {
+  0% {
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+  }
+  30% {
+    -webkit-transform: none;
+    -moz-tr
